@@ -37,7 +37,7 @@ export default function CourseDetails() {
       try {
 
         const res = await axios.get(
-          `http://localhost:5000/api/courses/${id}`
+          `https://e-learning-platform-lernify-backend.onrender.com/api/courses/${id}`
         );
 
         setCourse(res.data);
@@ -79,7 +79,7 @@ export default function CourseDetails() {
           <img
             src={
               course.thumbnail
-                ? `http://localhost:5000/uploads/${course.thumbnail}`
+                ? `https://e-learning-platform-lernify-backend.onrender.com/uploads/${course.thumbnail}`
                 : "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
             }
             alt={course.title}

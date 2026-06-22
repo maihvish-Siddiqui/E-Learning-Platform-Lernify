@@ -35,7 +35,7 @@ export default function Signup() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://e-learning-platform-lernify-backend.onrender.com/api/auth/signup",
         {
           name: formData.name,
           email: formData.email,

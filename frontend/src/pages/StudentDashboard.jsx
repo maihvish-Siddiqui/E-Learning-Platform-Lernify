@@ -20,7 +20,7 @@ export default function StudentDashboard() {
       try {
 
         const res = await axios.get(
-          `http://localhost:5000/api/enrollments/student/${user._id}`
+          `https://e-learning-platform-lernify-backend.onrender.com/api/enrollments/student/${user._id}`
         );
         console.log(res.data);
 
@@ -73,7 +73,7 @@ export default function StudentDashboard() {
 
                   src={
                     course.thumbnail
-                      ? `http://localhost:5000/uploads/${course.thumbnail}`
+                      ? `https://e-learning-platform-lernify-backend.onrender.com/uploads/${course.thumbnail}`
                       : "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
                   }
                   alt={course?.title}

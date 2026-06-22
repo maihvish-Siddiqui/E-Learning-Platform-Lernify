@@ -19,7 +19,7 @@ export default function Profile() {
       try {
 
         const res = await axios.get(
-          `http://localhost:5000/api/users/profile-data/${user._id}`
+          `https://e-learning-platform-lernify-backend.onrender.com/api/users/profile-data/${user._id}`
         );
 
         setCourses(res.data.instructorCourses || []);
@@ -54,7 +54,7 @@ export default function Profile() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        "http://localhost:5000/api/users/upload-photo",
+        "https://e-learning-platform-lernify-backend.onrender.com/api/users/upload-photo",
         formData,
         {
           headers: {
@@ -95,7 +95,7 @@ export default function Profile() {
 
             {user?.profilePhoto ? (
               <img
-                src={`http://localhost:5000/uploads/${user.profilePhoto}`}
+                src={`https://e-learning-platform-lernify-backend.onrender.com/uploads/${user.profilePhoto}`}
                 alt="profile"
                 className="w-28 h-28 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-yellow-400"
               />

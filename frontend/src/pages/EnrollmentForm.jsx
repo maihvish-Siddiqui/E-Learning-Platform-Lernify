@@ -35,7 +35,7 @@ export default function EnrollmentForm() {
       const user = JSON.parse(localStorage.getItem("user"));
   
       const res = await axios.post(
-        "http://localhost:5000/api/enrollments/enroll",
+        "https://e-learning-platform-lernify-backend.onrender.com/api/enrollments/enroll",
         {
           studentId: user._id,
           courseId: id,

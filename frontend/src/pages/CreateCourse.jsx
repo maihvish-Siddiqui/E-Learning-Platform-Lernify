@@ -104,7 +104,7 @@ export default function CreateCourse() {
       }
   
       await axios.post(
-        "http://localhost:5000/api/courses/create",
+        "https://e-learning-platform-lernify-backend.onrender.com/api/courses/create",
         courseData
       );
   

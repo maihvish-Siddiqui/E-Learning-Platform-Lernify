@@ -18,7 +18,7 @@ export default function InstructorDashboard() {
     const loadData = async () => {
       try {
         const courseRes = await fetch(
-          `http://localhost:5000/api/courses/instructor/${user._id}`
+          `https://e-learning-platform-lernify-backend.onrender.com/api/courses/instructor/${user._id}`
         );
         
         const coursesData = await courseRes.json();
@@ -27,7 +27,7 @@ export default function InstructorDashboard() {
         
         // FETCH ENROLLMENTS
         const enrollRes = await axios.get(
-          `http://localhost:5000/api/enrollments/instructor/${user._id}`
+          `https://e-learning-platform-lernify-backend.onrender.com/api/enrollments/instructor/${user._id}`
         );
         
         setEnrollments(enrollRes.data);
@@ -51,7 +51,7 @@ export default function InstructorDashboard() {
     try {
   
       await axios.delete(
-        `http://localhost:5000/api/courses/delete/${courseId}`
+        `https://e-learning-platform-lernify-backend.onrender.com/api/courses/delete/${courseId}`
       );
   
       // REMOVE COURSE FROM UI
@@ -113,7 +113,7 @@ export default function InstructorDashboard() {
               <img
                 src={
                   course.thumbnail
-                    ? `http://localhost:5000/uploads/${course.thumbnail}`
+                    ? `https://e-learning-platform-lernify-backend.onrender.com/uploads/${course.thumbnail}`
                     : "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
                 }
                 alt={course.title}

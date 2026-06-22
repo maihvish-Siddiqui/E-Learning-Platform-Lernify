@@ -13,7 +13,7 @@ export default function EditProfile() {
 
   const [photo, setPhoto] = useState(
     user?.profilePhoto
-      ? `http://localhost:5000/uploads/${user.profilePhoto}`
+      ? `https://e-learning-platform-lernify-backend.onrender.com/uploads/${user.profilePhoto}`
       : ""
   );
 
@@ -44,7 +44,7 @@ export default function EditProfile() {
   
     try {
       const res = await axios.put(
-        "http://localhost:5000/api/user/profile",
+        "https://e-learning-platform-lernify-backend.onrender.com/api/user/profile",
         formData,
         {
           headers: {
@@ -71,7 +71,7 @@ export default function EditProfile() {
   try {
 
     const res = await axios.delete(
-      "http://localhost:5000/api/user/profile-photo",
+      "https://e-learning-platform-lernify-backend.onrender.com/api/user/profile-photo",
       {
         headers: {
           Authorization: `Bearer ${token}`,

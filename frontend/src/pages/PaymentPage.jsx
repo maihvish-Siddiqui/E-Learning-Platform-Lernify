@@ -22,7 +22,7 @@ export default function PaymentPage() {
         );
         
         const res = await axios.get(
-          `http://localhost:5000/api/enrollments/payment/${id}?studentId=${user._id}`
+          `https://e-learning-platform-lernify-backend.onrender.com/api/enrollments/payment/${id}?studentId=${user._id}`
         );
   
         console.log("ENROLLMENT DATA:", res.data);
@@ -49,7 +49,7 @@ const handlePayment = async () => {
     const token = localStorage.getItem("token");
 
     await axios.patch(
-      `http://localhost:5000/api/enrollments/pay/${id}`,
+      `https://e-learning-platform-lernify-backend.onrender.com/api/enrollments/pay/${id}`,
       {},
       {
         headers: {
@@ -125,7 +125,7 @@ const handlePayment = async () => {
           </h2>
 
           <img
-            src={`http://localhost:5000/uploads/${course.thumbnail}`}
+            src={`https://e-learning-platform-lernify-backend.onrender.com/uploads/${course.thumbnail}`}
             alt={course.title}
             className="w-full h-60 object-cover rounded-2xl"
           />

@@ -17,7 +17,7 @@ export default function Courses() {
       try {
 
         const response = await fetch(
-          "http://localhost:5000/api/courses"
+          "https://e-learning-platform-lernify-backend.onrender.com/api/courses"
         );
 
         const data = await response.json();
@@ -92,7 +92,7 @@ export default function Courses() {
             <img
               src={
                 course.thumbnail
-                  ? `http://localhost:5000/uploads/${course.thumbnail}`
+                  ? `https://e-learning-platform-lernify-backend.onrender.com/uploads/${course.thumbnail}`
                   : "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
               }
               alt={course.title}

@@ -24,7 +24,7 @@ export default function LearnCourse() {
         );
   
         const res = await axios.get(
-          `http://localhost:5000/api/courses/learn/${id}?studentId=${user._id}`
+          `https://e-learning-platform-lernify-backend.onrender.com/api/courses/learn/${id}?studentId=${user._id}`
         );
   
         setCourse(res.data);
@@ -52,7 +52,7 @@ export default function LearnCourse() {
           alert("Please complete payment first");
       
           const enrollRes = await axios.get(
-            `http://localhost:5000/api/enrollments/check/${id}?studentId=${user._id}`
+            `https://e-learning-platform-lernify-backend.onrender.com/api/enrollments/check/${id}?studentId=${user._id}`
           );
       
           navigate(`/payment/${enrollRes.data._id}`);
@@ -78,13 +78,6 @@ export default function LearnCourse() {
   
   }, [id, navigate]);
 
-  // if (!course) {
-  //   return (
-  //     <div className="min-h-screen bg-[#020617] text-white flex items-center justify-center text-3xl">
-  //       Loading...
-  //     </div>
-  //   );
-  // }
   if (loading) {
     return (
       <div className="min-h-screen bg-[#020617] text-white flex items-center justify-center text-3xl">
@@ -184,7 +177,7 @@ export default function LearnCourse() {
                   try {
 
                     await axios.post(
-                      "http://localhost:5000/api/enrollments/complete-lecture",
+                      "https://e-learning-platform-lernify-backend.onrender.com/api/enrollments/complete-lecture",
                       {
                         studentId: user._id,
                         courseId: id,
@@ -247,7 +240,7 @@ export default function LearnCourse() {
     height="450"
   >
     <source
-      src={`http://localhost:5000/uploads/${lecture.videoUrl}`}
+      src={`https://e-learning-platform-lernify-backend.onrender.com/uploads/${lecture.videoUrl}`}
       type="video/mp4"
     />
 
@@ -273,7 +266,7 @@ export default function LearnCourse() {
                   </p>
 
                   <a
-                    href={`http://localhost:5000/uploads/${lecture.pdf}`}
+                    href={`https://e-learning-platform-lernify-backend.onrender.com/uploads/${lecture.pdf}`}
                     target="_blank"
                     rel="noreferrer"
                     className="mt-5 inline-block bg-blue-500 hover:bg-blue-600 px-5 py-3 rounded-xl font-semibold transition"

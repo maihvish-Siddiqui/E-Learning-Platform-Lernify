@@ -32,11 +32,6 @@ export default function ManageCourse() {
 
     try {
 
-      // await axios.put(
-      //   `http://localhost:5000/api/courses/add-lecture/${id}`,
-      //   lectureData
-      // );
-
       const formData = new FormData();
 
 formData.append(
@@ -90,7 +85,7 @@ if (lectureData.videoType === "upload") {
 }
 
 await axios.put(
-  `http://localhost:5000/api/courses/add-lecture/${id}`,
+  `https://e-learning-platform-lernify-backend.onrender.com/api/courses/add-lecture/${id}`,
   formData
 );
 
