@@ -92,15 +92,6 @@ GET /api/courses → Get all courses
 
 ---
 
-## 📸 Screenshots
-
-Add screenshots here after deployment:
-- Home page  
-- Login page  
-- Dashboard  
-
----
-
 ## 🚀 Deployment
 
 Frontend: Vercel  
