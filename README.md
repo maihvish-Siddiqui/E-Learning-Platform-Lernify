@@ -6,6 +6,8 @@ Lernify is a full-stack e-learning web application built to provide a simple, in
 
 ## 🚀 Live Demo  
 
+https://e-learning-platform-lernify.vercel.app/
+
 ---
 
 ## 📌 Features
@@ -45,7 +47,7 @@ Tools & Platforms:
 
 ## 📁 Project Structure
 
-college-project/
+E-Learning-Platform-Lernify/
 ├── frontend/        # Frontend code (UI)
 ├── backend/         # Backend code (API + Database)
 ├── README.md
