@@ -6,14 +6,15 @@ Lernify is a full-stack e-learning web application built to provide a simple, in
 
 ## 🚀 Live Demo  
 
-https://e-learning-platform-lernify.vercel.app/
+Frontend: https://e-learning-platform-lernify.vercel.app
+Backend: https://e-learning-platform-lernify-backend.onrender.com
 
 ---
 
 ## 📌 Features
 
 - User registration and login system  
-- Secure authentication using JWT (if implemented)  
+- Secure authentication using JWT 
 - Password encryption for security  
 - Course listing and detailed course pages  
 - Responsive design for all screen sizes  
@@ -43,15 +44,6 @@ Tools & Platforms:
 - Render (Backend deployment)  
 - Vercel (Frontend deployment)  
 
----
-
-## 📁 Project Structure
-
-E-Learning-Platform-Lernify/
-├── frontend/        # Frontend code (UI)
-├── backend/         # Backend code (API + Database)
-├── README.md
-└── .gitignore
 
 ---
 
@@ -104,6 +96,7 @@ Database: MongoDB Atlas
 
 Maihvish Siddiqui  
 GitHub: https://github.com/maihvish-Siddiqui  
+LinkedIn: https://linkedin.com/in/maihvish09
 
 ---
 
